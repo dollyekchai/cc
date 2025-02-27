@@ -21,10 +21,10 @@
 	Client.InrtoDollar_Service service = new Client.InrtoDollar_Service();
 	Client.InrtoDollar port = service.getInrtoDollarPort();
 	 // TODO initialize WS operation arguments here
-	double a = Double.parseDouble(request.getParameter("tl"));
+	double a = Double.parseDouble(request.getParameter("tl")); ---changes in this 
 	// TODO process result here
 	java.lang.String result = port.currencyConverter(a);
-	out.println(result);
+	out.println(result);        ---(in this printlresult have then remove result)
     } catch (Exception ex) {
 	// TODO handle custom exceptions here
     }
