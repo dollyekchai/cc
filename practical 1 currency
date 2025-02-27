@@ -1,0 +1,32 @@
+1- In web service Currency converter type this
+@WebMethod(operationName = "CurrencyConverter")
+    public String CurrencyConverter(@WebParam(name = "a") double a) {
+        //TODO write your implementation code here:
+        return "The indian rupees "+a+" in Dollar is : "+(a/83.17);
+    }
+
+2- In Input.jsp type this
+<form action="output.jsp">
+            <pre>
+                Enter Indian rupees to convert : <input type="text" name="tl">
+                    <input type ="submit"> <input type="reset">
+            </pre>
+
+3- for output.jsp drag from web service refrences
+
+ code is look like this
+ <%-- start web service invocation --%><hr/>
+    <%
+    try {
+	Client.InrtoDollar_Service service = new Client.InrtoDollar_Service();
+	Client.InrtoDollar port = service.getInrtoDollarPort();
+	 // TODO initialize WS operation arguments here
+	double a = Double.parseDouble(request.getParameter("tl"));
+	// TODO process result here
+	java.lang.String result = port.currencyConverter(a);
+	out.println(result);
+    } catch (Exception ex) {
+	// TODO handle custom exceptions here
+    }
+    %>
+    <%-- end web service invocation --%><hr/>
