@@ -1,0 +1,26 @@
+1 -- create in console .NET Framework
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using EvenOdd.ServiceReference1;
+
+
+namespace EvenOdd
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            EvenOddWSSoapClient ws = new EvenOddWSSoapClient();
+            Console.WriteLine("Enter any number ");
+            int n = int.Parse(Console.ReadLine());
+            Console.WriteLine(ws.evenodd(n));
+            Console.ReadLine();
+
+        }
+
+    }
+}
