@@ -24,7 +24,7 @@
 	double a = Double.parseDouble(request.getParameter("tl")); ---changes in this 
 	// TODO process result here
 	java.lang.String result = port.currencyConverter(a);
-	out.println(result);        ---(in this printlresult have then remove result)
+	out.println(result);        ---(in this it have 2 results then  remove 1 result)
     } catch (Exception ex) {
 	// TODO handle custom exceptions here
     }
