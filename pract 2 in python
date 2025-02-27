@@ -1,0 +1,6 @@
+from zeep import Client
+wsdl_url='http://localhost:8080/practical2/CurrencyConverter?wsdl'
+client=Client(wsdl_url)
+d=float(input("Enter the currency in Indian rupees :"))
+result = client.service.InrtoDollar(d)
+print(result)
