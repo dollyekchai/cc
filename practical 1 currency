@@ -2,7 +2,7 @@
 @WebMethod(operationName = "CurrencyConverter")
     public String CurrencyConverter(@WebParam(name = "a") double a) {
         //TODO write your implementation code here:
-        return "The indian rupees "+a+" in Dollar is : "+(a/83.17);
+        return "The indian rupees "+a+" in Dollar is : "+(a/83.17);     ---(copy this line)
     }
 
 2- In Input.jsp type this
@@ -21,10 +21,10 @@
 	Client.InrtoDollar_Service service = new Client.InrtoDollar_Service();
 	Client.InrtoDollar port = service.getInrtoDollarPort();
 	 // TODO initialize WS operation arguments here
-	double a = Double.parseDouble(request.getParameter("tl")); ---changes in this 
+	double a = Double.parseDouble(request.getParameter("tl")); --- copy this line
 	// TODO process result here
 	java.lang.String result = port.currencyConverter(a);
-	out.println(result);        ---(out.println("Result = "+result)) remove Result 
+	out.println(result);        ---(  copy this line)
     } catch (Exception ex) {
 	// TODO handle custom exceptions here
     }
