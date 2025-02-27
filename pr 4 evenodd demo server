@@ -1,3 +1,7 @@
+1--open visual studio code and then click on asp .net web framework
+2--select an empty section 
+2-- click on add click on new item web 
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
