@@ -1,0 +1,25 @@
+using currency1.ServiceReference1;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using currency1.ServiceReference1;
+
+
+namespace currency1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            CurrencyConverterClient client = new CurrencyConverterClient();
+            Console.WriteLine("Enter the currency in indian Rupees :");
+            double d = double.Parse(Console.ReadLine());
+            Console.WriteLine(client.InrtoDollar(d));
+            Console.WriteLine("Enter any key to exit...");
+            Console.ReadKey();
+            Console.ReadLine();
+        }
+    }
+}
