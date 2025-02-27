@@ -1,3 +1,7 @@
+1--click on create project and then click on the console app .Net Framework
+2--the click on the add reference --> system servicemodel
+3-- then click again add and click on the service reference and then following code lines
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
