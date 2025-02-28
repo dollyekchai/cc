@@ -1,0 +1,6 @@
+1 registry Editor -- computer\HKEY_CLASSES_ROOT\spice\shell\open\command
+2 then find path and go admin user app data and in bin 
+
+modify command --\remote-viewer %1
+then upload iso file
+give name ubuntu
